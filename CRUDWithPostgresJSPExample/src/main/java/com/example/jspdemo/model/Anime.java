@@ -21,12 +21,10 @@ public class Anime {
     }
 
 	public long getCustomerid() {
-		System.out.println("Getter------------------------------------------------------------------>"+customerid);
 		return customerid;
 	}
 
 	public void setCustomerid(long customerid) {
-		System.out.println("Setter------------------------------------------------------------------>"+customerid);
 		this.customerid = customerid;
 	}
 

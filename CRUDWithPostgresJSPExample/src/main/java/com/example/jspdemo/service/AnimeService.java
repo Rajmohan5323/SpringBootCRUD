@@ -22,7 +22,7 @@ public class AnimeService {
         return animeList;
     }
 
-    public Anime getAnimeById(Long customerid) {
+    public Anime getAnimeById(long customerid) {
         return animeRepo.findById(customerid).get();
     }
 
@@ -36,7 +36,7 @@ public class AnimeService {
         return false;
     }
 
-    public boolean deleteAnime(Long customerid) {
+    public boolean deleteAnime(long customerid) {
         animeRepo.deleteById(customerid);
 
         if (animeRepo.findById(customerid) != null) {
